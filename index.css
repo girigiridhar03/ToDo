@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(86, 82, 82);
+}
+
+body{
+    background-color: burlywood;
+}
+
+.container{
+    background: #fff;
+    width: 50vw;
+    margin: 10rem auto 0;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.input-box{
+    width: 100%;
+    margin: 2rem 0;
+    background-color: burlywood;
+    padding: .5rem;
+    border-radius: 30px;
+   
+}
+
+.input-box form input[type="text"]{
+    width: 40vw;
+    background: transparent;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.input-box form input[type="text"]::placeholder{
+    font-weight: 550;
+    font-size: 1rem;
+    color: rgb(86, 82, 82);
+}
+
+.input-box form input[type="submit"]{
+  width: 5vw;
+  font-size: 1rem;
+  height: 40px;
+  outline: none;
+   background-color: #fff;
+   outline: none;
+   border: none;
+   border-radius: 30px;
+   font-weight: bolder;
+}
+
+
+.todo-container{
+    width: 50vw;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: white;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-y: scroll;
+    
+}
+.todo-container::-webkit-scrollbar{
+    display: none;
+}
+h4{
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+
+}
+
+.container-one{
+    width: 50%;
+    height: 350px;
+    padding: 0 2rem;
+   
+}
+
+.container-two{
+    width: 50%;
+    height: 350px;
+    padding: 0 2rem;
+}
+ul{
+    margin-top: 1rem;
+}
+ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+   
+}
+
+
+.done{
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(125, 211, 125);
+    border: none;
+    cursor: pointer
+
+}
+
+.remove{
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(201, 81, 81);
+    border: none;
+    cursor: pointer;
+}
+
+
+p{
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+    margin: 1rem auto;
+}
+@media screen and (max-width:1440px){
+    .container{
+        width: 60%;
+    }
+    .container{
+        width: 70%;
+      }
+      .input-box form input[type="text"]{
+        width: 79%;
+    }
+    .input-box form input[type="submit"]{
+       width: 20%;
+    }
+    .todo-container{
+        width: 70%;
+    }
+}
+@media screen and (max-width:1024px) {
+  
+  .container{
+    width: 70%;
+  }
+  .input-box form input[type="text"]{
+    width: 79%;
+}
+.input-box form input[type="submit"]{
+   width: 20%;
+}
+  
+    .todo-container{
+        width: 70%;
+        padding: 1rem;
+    }
+    .container-one{
+        padding: 0 1rem;
+    }
+    .container-two{
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container{
+        width: 95vw;
+    }
+    .input-box form input[type="text"]{
+         width: 78%;
+    }
+    .input-box form input[type="submit"]{
+        width: 20%;
+    }
+    .todo-container{
+        width: 95%;
+        padding: 1rem;
+    }
+    .container-one{
+        padding: 0;
+    }
+   
+    .container-two{
+        padding: 0;
+    }
+   
+
+}
+
+
+@media screen and (max-width:425px){
+     h4{
+        width: 100%;
+        font-size: 1rem;
+     }
+
+     ul li{
+        font-size: 1rem;
+     }
+}
